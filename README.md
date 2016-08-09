@@ -22,6 +22,20 @@ DataDump::FLIGHT_LIST # array of hashes
 DataDump::FLASHING_LIGHTS # hash of arrays
 ```
 
+# Do you have any working scripts?
+
+Why yes! Make sure the script directory is executable via:
+
+```
+chmod -R 755 ./script
+```
+
+Then run any of these:
+
+```
+./script/ana_origins.rb # printf of both frame messages
+```
+
 # Gemfiles and Rbenv
 The .ruby-version file is referencing rbenv. If you aren't already using it, I definitely recommend it.
 https://github.com/rbenv/rbenv#choosing-the-ruby-version
