@@ -43,21 +43,21 @@ You can get around this by starting irb with any of the following:
 
 ```
 irb
-require './data_dump'
+require './module/data_dump'
 ```
 
 OR
 
 ```
 irb
-irb(main):003:0> require_relative 'data_dump'
+irb(main):003:0> require_relative 'module/data_dump'
 ```
 
 OR
 
 ```
 irb -I .
-irb(main):001:0> require 'data_dump'
+irb(main):001:0> require 'module/data_dump'
 ```
 
 For more information: http://stackoverflow.com/questions/2900370/why-does-ruby-1-9-2-remove-from-load-path-and-whats-the-alternative
