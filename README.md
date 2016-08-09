@@ -15,7 +15,7 @@ Currently, this just contains some REALLY helpful gems and a data dump module of
 
 You can access the module vars with:
 
-``
+```
 DataDump::TRACER_HASH_NEWLINES # string
 
 DataDump::TRACER_HASH # string
@@ -23,7 +23,7 @@ DataDump::TRACER_HASH # string
 DataDump::ANA_ORIGIN # hash
 
 DataDump::FLIGHT_LIST # array of hashes
-``
+```
 
 # Gemfiles and Rbenv
 The .ruby-version file is referencing rbenv. If you aren't already using it, I definitely recommend it.
