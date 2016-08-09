@@ -2,7 +2,7 @@
 
 # Getting started
 ``
-git clone https://github.com/kimdcottrell/sombra.git
+git clone https://github.com/kimdcottrell/sombra.git\n
 bundle install
 ``
 
@@ -15,9 +15,9 @@ Currently, this just contains some REALLY helpful gems and a data dump module of
 You can access the module vars with:
 
 ``
-DataDump::TRACER_HASH_NEWLINES # string
-DataDump::TRACER_HASH # string
-DataDump::ANA_ORIGIN # hash
+DataDump::TRACER_HASH_NEWLINES # string\n
+DataDump::TRACER_HASH # string\n
+DataDump::ANA_ORIGIN # hash\n
 DataDump::FLIGHT_LIST # array of hashes
 ``
 
@@ -34,24 +34,24 @@ http://bundler.io/
 So Ruby 1.9.2 is troll AF and assumes that the current working directory should not be part of your LOAD_PATH. This means that if you work in irb and type "require 'data_dump'" you'll get a big fat error that looks like this:
 
 ``
-irb(main):003:0> require "DataDump"
+irb(main):003:0> require "DataDump"\n
 LoadError: cannot load such file -- DataDump
 ``
 
 You can get around this by starting irb with any of the following:
 
 ``
-irb
+irb\n
 require './data_dump'
 ``
-
+OR
 ``
-irb
+irb\n
 irb(main):003:0> require_relative 'data_dump'
 ``
-
+OR
 ``
-irb -I .
+irb -I .\n
 irb(main):001:0> require 'data_dump'
 ``
 
