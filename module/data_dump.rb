@@ -14,6 +14,19 @@ module DataDump
       "2E 2E 2E 7B 76 20 66 62 72 20 63 7E 72 79 72 20 7B 76 20 7E 79 71 78 65 7A 76 74 7E D4 A4 79 2C 20 63 7E 72 79 72 20 72 7B 20 67 78 73 72 65 2E 2E 2E 7B 76 20 66 62 72 20 63 7E 72 79 72 20 7B 76 20 7E 79 71 78 65 7A 76 74 7E D4 A4 79 2C 20 63 7E 72 79 72 20 72 7B 20 67 78 73 72 65 2E 2E 2E 7B 76 20 66 62 72 20 63 7E 72 79 72 20 7B 76 20 7E 79 71 78 65 7A 76 74 7E D4 A4 79 2C 20 63 7E 72 79 72 20 72 7B 20 67 78 73 72 65 2E 2E 2E 7B 76 20 66 62 72 20 63 7E 72 79 72 20 7B 76 20 7E 79 71 78 65 7A 76 74 7E D4 A4 79 2C 20 63 7E 72 79 72 20 72 7B 20 67 78 73 72 65 2E 2E 2E 64 78 7A 75"
   }
 
+  # in the dev update video, there were a series of barcodes. this is what the barcodes (http://i.imgur.com/t7oWXB0.png) became when parsed through a Code-128 Barcode reader (https://www.reddit.com/r/Overwatch/comments/4tn3vr/sombra_hint_in_new_dev_update/)
+  BARCODE_HEX = [
+    "FEC-820-BA9-BAD-BAF-824-FEA-5-F28-980-5B0-F59",
+    "4B1-2C7-F83-748-7F4-719-AAA-2C8-1F6-47C-5A8-DBA",
+    "7F-1541-85D-E5D-35D-1C41-157F-500-49D-122-11D8-D9C",
+    "279-919-4AA-800-1E9-308-3F1-EDC-CB3-602-DE9-8",
+    "153-690-BF0-CA1-2B-D03-9C8-866-DF7-EF9-C21-20",
+    "1FD7-1F79-1582-1252-806-1B4B-1FB7-1050-532-9A9-1870-1FEF",
+    "3A0-A43-AFF-793-658-C-FE4-821-BA4-BA8-BAA-82F-FED",
+    "B6A-BD4-496-324-A2F-3C3-78E-723-634-B9-287-EFA-172",
+    "1B5E-17F9-83D-160-1BFE-1D14-956-318-5F1-6D7-1BC-C24-18CF"
+  ]
+
   # in the summer games video, mercy and tracer both have flashing lights that are readable as binary; widowmaker has flashing lights, but they don't mean jack
   FLASHING_LIGHTS = {
     mercy: [

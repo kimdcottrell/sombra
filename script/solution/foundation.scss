@@ -1,0 +1,45 @@
+$foundation-version: '1.2.0';
+
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+// Libraries (let's make Normalize an external dependency eventually)
+@import
+  "foundation-apps/scss/vendor/normalize";
+
+// Helpers
+@import
+  "foundation-apps/scss/helpers/functions",
+  "foundation-apps/scss/helpers/mixins",
+  "foundation-apps/scss/helpers/breakpoints",
+  "foundation-apps/scss/helpers/images";
+
+// Global styles
+@import
+  "foundation-apps/scss/global";
+
+// Components
+@import
+  "foundation-apps/scss/components/iconic",
+  "foundation-apps/scss/components/action-sheet",
+  "foundation-apps/scss/components/block-list",
+  "foundation-apps/scss/components/button",
+  "foundation-apps/scss/components/button-group",
+  "foundation-apps/scss/components/card",
+  "foundation-apps/scss/components/extras",
+  "foundation-apps/scss/components/forms",
+  "foundation-apps/scss/components/grid",
+  "foundation-apps/scss/components/title-bar",
+  "foundation-apps/scss/components/label",
+  "foundation-apps/scss/components/list",
+  "foundation-apps/scss/components/menu-bar",
+  "foundation-apps/scss/components/modal",
+  "foundation-apps/scss/components/motion",
+  "foundation-apps/scss/components/notification",
+  "foundation-apps/scss/components/off-canvas",
+  "foundation-apps/scss/components/popup",
+  "foundation-apps/scss/components/switch",
+  "foundation-apps/scss/components/tabs",
+  "foundation-apps/scss/components/accordion",
+  "foundation-apps/scss/components/typography",
+  "foundation-apps/scss/components/utilities";

@@ -33,7 +33,8 @@ chmod -R 755 ./script
 Then run any of these:
 
 ```
-./script/ana_origins.rb # printf of both frame messages
+./script/solution/ana_origins.rb # printf of both frame messages
+./script/arg_guesses/tracer_hash_to_bitmap.rb # takes the tracer hash and makes a gif of it
 ```
 
 # Gemfiles and Rbenv

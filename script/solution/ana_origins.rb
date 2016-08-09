@@ -1,4 +1,6 @@
 #!/usr/bin/env ruby
+
+# SOLUTION TO ROUND 1 BELOW
 require_relative '../class/xor'
 require_relative '../module/data_dump'
 
