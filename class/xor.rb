@@ -6,6 +6,7 @@ class XOR
 
   # options example: options = { force_encoding: "UTF-8", sub: [{pattern:'7', replacement:' '}, {pattern:'9', replacement:'.'}] }
   def decode options
+    # credit: https://gist.github.com/abhisek/1345225
     @result = @string.split(//).collect {|e| [e.unpack('C').first ^ (@key.to_i & 0xFF)].pack('C') }.join
 
     if options.has_key?(:sub)
