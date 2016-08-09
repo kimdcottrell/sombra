@@ -14,6 +14,18 @@ module DataDump
       "2E 2E 2E 7B 76 20 66 62 72 20 63 7E 72 79 72 20 7B 76 20 7E 79 71 78 65 7A 76 74 7E D4 A4 79 2C 20 63 7E 72 79 72 20 72 7B 20 67 78 73 72 65 2E 2E 2E 7B 76 20 66 62 72 20 63 7E 72 79 72 20 7B 76 20 7E 79 71 78 65 7A 76 74 7E D4 A4 79 2C 20 63 7E 72 79 72 20 72 7B 20 67 78 73 72 65 2E 2E 2E 7B 76 20 66 62 72 20 63 7E 72 79 72 20 7B 76 20 7E 79 71 78 65 7A 76 74 7E D4 A4 79 2C 20 63 7E 72 79 72 20 72 7B 20 67 78 73 72 65 2E 2E 2E 7B 76 20 66 62 72 20 63 7E 72 79 72 20 7B 76 20 7E 79 71 78 65 7A 76 74 7E D4 A4 79 2C 20 63 7E 72 79 72 20 72 7B 20 67 78 73 72 65 2E 2E 2E 64 78 7A 75"
   }
 
+  # in the summer games video, mercy and tracer both have flashing lights that are readable as binary; widowmaker has flashing lights, but they don't mean jack
+  FLASHING_LIGHTS = {
+    mercy: [
+      "00001000",
+      "01000000"
+    ],
+    tracer: [
+      "00010000",
+      "01100000"
+    ]
+  }
+
   # All of the Numani Flight billboard data
   FLIGHT_LIST = [
     {

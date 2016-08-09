@@ -19,6 +19,7 @@ DataDump::TRACER_HASH_NEWLINES # string
 DataDump::TRACER_HASH # string
 DataDump::ANA_ORIGIN # hash
 DataDump::FLIGHT_LIST # array of hashes
+DataDump::FLASHING_LIGHTS # hash of arrays
 ```
 
 # Gemfiles and Rbenv
