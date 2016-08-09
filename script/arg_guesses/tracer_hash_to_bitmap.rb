@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
-require_relative '../class/bitmapper'
-require_relative '../module/data_dump'
+require_relative '../../class/bitmapper'
+require_relative '../../module/data_dump'
 require 'Base64'
 
 crypted = Base64.decode64(DataDump::TRACER_HASH)

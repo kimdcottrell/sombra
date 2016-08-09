@@ -3,7 +3,7 @@ require "rmagick"
 include Magick
 
 class Bitmapper
-  def self.convert(input_string, output_file="./dump.gif")
+  def self.convert(input_string, output_file="../assets/dump.gif")
     bin = ""
     input_string.each_byte { |n| bin << "%08b" % n }
     size = Math.sqrt(bin.length).to_i
