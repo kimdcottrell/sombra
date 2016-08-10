@@ -33,9 +33,14 @@ chmod -R 755 ./script
 Then run any of these:
 
 ```
-./script/solution/ana_origins.rb # printf of both frame messages
-./script/solution/dev_blog_barcodes.rb # printf of raw QR code binary - make 1's black and 0's white for final result
+# CONFIRMED SOLUTIONS TO PREVIOUS ARGS
+./script/solution/1_ana_origins.rb # printf of both frame messages
+./script/solution/2_dev_blog_barcodes.rb # printf of raw QR code binary - make 1's black and 0's white for final result
+
+# GUESSES FOR CURRENT (4th) ARG
+./script/arg_guesses/arg2_rot23_hexmash_into_qr_binary.rb # ROT23 the barcode hash and then try to make a QR binary
 ./script/arg_guesses/tracer_hash_to_bitmap.rb # takes the tracer hash and makes a gif of it
+./script/arg_guesses/test_flightboard.rb # various attempts to get something from the Numani flight list
 ```
 
 # Gemfiles and Rbenv
