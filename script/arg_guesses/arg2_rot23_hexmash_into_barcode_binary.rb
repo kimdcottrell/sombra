@@ -1,25 +1,27 @@
 #!/usr/bin/env ruby
 
-# SOLUTION TO ROUND 2 BELOW - credit to https://www.reddit.com/r/Overwatch/comments/4tn3vr/sombra_hint_in_new_dev_update/
+# result set shown here: https://gist.github.com/kimdcottrell/40630606051d3cf518cedb8b97675e0d
+
 require_relative '../../module/data_dump'
+require_relative '../../class/rot'
 
-# people noticed there were only 12 or 13 sections
-section_bit_count = DataDump::BARCODE_MASH.map{ |str| str.count('-') + 1}
-
-# unpack barcode mash into hex just to see if it's possible, but for no other reason
-# barcode_hex       = DataDump::BARCODE_MASH.map{ |str| str.unpack('H*')}
+rotted_mash       = Array.new
+rotted_mash << DataDump::BARCODE_MASH.map do |str|
+  remastered = ROT.new(str, 23)
+  remastered.decode.join
+end
 
 rows = Array.new
-DataDump::BARCODE_MASH.each do |row|
+rotted_mash.first.each do |row|
   # http://stackoverflow.com/questions/21371596/what-does-the-to-i-argument-base-actually-do
   # hexadecimal format: 0123456789ABCDEF aka base16 - so use to_i(16)
   # binary format: 01 aka base2 - so use to_s(2) to make binary and a string
   # assume that 12 or 13 is the key since there were 12 or 13 sections always
-  rows << row.split("-").map{ |section| section.to_i(16).to_s(2).rjust(13, "0") }
+  rows << row.split("-").map{ |c_section| c_section.to_i(16).to_s(2).rjust(13, "0") }
 end
 rows.map!{|r| r.join}
 
-# you will see 3 lines that are of a greater length than the others if you printf this
+# DEVNOTE: you will see 3 lines that are of a greater length than the others if you printf this
 # printf_test = rows.join("\n")
 
 # move the remainder of those lines to the last line
@@ -38,7 +40,6 @@ if row_size.length == 2
     barcode_remainder << row[min_size.first..max_size.first]
   end
 
-  # take this value and make the 1's black and the 0's white for your QR code
   printf "#{barcode.join("\n")}\n#{barcode_remainder.join}\n\n\n^ take this value and make the 1's black and the 0's white for your QR code" # cross referenced: http://pastebin.com/yFH3115S
 
 else
