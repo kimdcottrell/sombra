@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 
 # SOLUTION TO ROUND 1 BELOW
-require_relative '../class/xor'
-require_relative '../module/data_dump'
+require_relative '../../class/xor'
+require_relative '../../module/data_dump'
 
 first_convert_to_ascii  = DataDump::ANA_ORIGIN[:first_frame].split.map(&:hex).map(&:chr)
 first_encrypted_hash    = XOR.new(first_convert_to_ascii.join, 23)

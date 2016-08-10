@@ -1,8 +1,7 @@
 #!/usr/bin/env ruby
 
 # SOLUTION TO ROUND 2 BELOW - credit to https://www.reddit.com/r/Overwatch/comments/4tn3vr/sombra_hint_in_new_dev_update/
-require "base_x"
-require_relative './module/data_dump'
+require_relative '../../module/data_dump'
 
 # people noticed there were only 12 or 13 sections
 section_bit_count = DataDump::BARCODE_MASH.map{ |str| str.count('-') + 1}
@@ -25,7 +24,7 @@ rows.map!{|r| r.join}
 
 # move the remainder of those lines to the last line
 row_count = Array.new
-rows.each{ |row| row_count << r.length }
+rows.each{ |r| row_count << r.length }
 row_size = row_count.each_with_object(Hash.new(0)) { |int,counts| counts[int] += 1 }
 
 if row_size.length == 2
@@ -40,7 +39,7 @@ if row_size.length == 2
   end
 
   # take this value and make the 1's black and the 0's white for your QR code
-  printf "#{barcode.join("\n")}\n#{barcode_remainder.join}" # cross referenced: http://pastebin.com/yFH3115S
+  printf "#{barcode.join("\n")}\n#{barcode_remainder.join}\n\n\n^ take this value and make the 1's black and the 0's white for your QR code" # cross referenced: http://pastebin.com/yFH3115S
 
 else
   p "ERROR: You definitely don't have a QR code since you have more than 2 lengths in your binaries at this stage"
