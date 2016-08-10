@@ -3,6 +3,9 @@ GEM
   specs:
     barby (0.6.4)
     base_x (0.8.1)
+    chunky_png (1.3.6)
+    rqrcode (0.10.1)
+      chunky_png (~> 1.0)
 
 PLATFORMS
   ruby
@@ -10,6 +13,7 @@ PLATFORMS
 DEPENDENCIES
   barby
   base_x
+  rqrcode
 
 RUBY VERSION
    ruby 2.3.1p112
