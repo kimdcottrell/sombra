@@ -34,6 +34,7 @@ Then run any of these:
 
 ```
 ./script/solution/ana_origins.rb # printf of both frame messages
+./script/solution/dev_blog_barcodes.rb # printf of raw QR code binary - make 1's black and 0's white for final result
 ./script/arg_guesses/tracer_hash_to_bitmap.rb # takes the tracer hash and makes a gif of it
 ```
 
