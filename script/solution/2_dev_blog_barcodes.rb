@@ -25,8 +25,8 @@ end
 #zero fill the last line for right-padding
 lines[12] = lines[12].rjust(lines[0].length, "0")
 
-# DEVNOTE: to see the binary at this point
-printf "#{lines.join"\n"}"
+# DEVNOTE: to see the binary at this point, printf this
+# printf "#{lines.join"\n"}"
 
 # take binary and make it into a binary image which we'll later turn into a QR code
 Bitmapper::convert("#{lines.join}", 116, 13, false, 20, "./asset/img/dev_blog_barcode_3_tiles_by_side.gif")
