@@ -15,8 +15,8 @@ lines = [""]*13
 nums = DataDump::BARCODE_MASH.each do |l|
   l.split("-").each_with_index do |c,i|
     # http://stackoverflow.com/questions/21371596/what-does-the-to-i-argument-base-actually-do
-    # 1. use to_i(16) to convert our barcode mash sections into hexadecimals (hexadecimal format: 0123456789ABCDEF aka base16)
-    # 2. use to_s(2) to convert our Base16 string into Base2 aka binary
+    # 1. use to_i(16) to convert our barcode mash sections (hexadecimals (e.g. 0xFEC)) into Base16
+    # 2. use to_s(2) to convert our Base16 int into Base2 (binary) string 
     # 3. assume that 12 or 13 is the key since there were 12 or 13 sections always, so pad 13 spaces over
    lines[i] += c.to_i(16).to_s(2).rjust(13, "0")
   end
