@@ -5,6 +5,10 @@ module DataDump
   # the tracer hash without the newlines
   TRACER_HASH = "U2FsdGVkX1+vupppZksvRf5pq5g5XjFRlipRkwB0K1Y96Qsv2Lm+31cmzaAILwytX/z66ZVWEQM/ccf1g+9m5Ubu1+sit+A9cenDxxqklaxbm4cMeh2oKhqlHhdaBKOi6XX2XDWpa6+P5o9MQw=="
 
+  ACHIEVEMENTS_FULL_TRANSLATED_MESSAGE = "Nice, not bad at all. However, I'm getting bored. Let's try something in the same direction. uczihriwgsxorxwunaarawryqhbrsfmeqrjjmu 5552E494 78T3 4VM9 OPL6 IS8208O913KRlrx"
+
+  ACHIEVEMENTS_HASH = "uczihriwgsxorxwunaarawryqhbrsfmeqrjjmu 5552E494 78T3 4VM9 OPL6 IS8208O913KRlrx"
+
   ANA_ORIGIN = {
     # On July 12, 2016, a video for the new Overwatch hero named Ana was released. By pausing the video at the 2:11 time mark, a bunch of hexadecimal numbers were discovered:
     first_frame:
