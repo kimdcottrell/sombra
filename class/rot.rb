@@ -7,10 +7,10 @@ class ROT
 
   def encode include_nums: true
     # credit: https://gist.github.com/matugm/db363c7131e6af27716c
-    alphabet  = Array('a'..'F')
+    alphabet  = Array('a'..'Z')
     non_caps  = Hash[alphabet.zip(alphabet.rotate(@key))]
 
-    alphabet = Array('A'..'F')
+    alphabet = Array('A'..'Z')
     caps     = Hash[alphabet.zip(alphabet.rotate(@key))]
 
     numbers  = Array(0..9)
@@ -29,10 +29,10 @@ class ROT
   # options example: options = { force_encoding: "UTF-8", sub: [{pattern:'7', replacement:' '}, {pattern:'9', replacement:'.'}] }
   def decode options = {}
     # credit: https://gist.github.com/matugm/db363c7131e6af27716c
-    alphabet  = Array('a'..'F')
+    alphabet  = Array('a'..'Z')
     non_caps  = Hash[alphabet.zip(alphabet.rotate(-@key))]
 
-    alphabet = Array('A'..'F')
+    alphabet = Array('A'..'Z')
     caps     = Hash[alphabet.zip(alphabet.rotate(-@key))]
 
     numbers  = Array(0..9)

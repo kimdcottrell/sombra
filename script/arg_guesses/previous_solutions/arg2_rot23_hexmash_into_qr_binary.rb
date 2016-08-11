@@ -2,8 +2,8 @@
 
 # result set shown here: https://gist.github.com/kimdcottrell/40630606051d3cf518cedb8b97675e0d
 
-require_relative '../../module/data_dump'
-require_relative '../../class/rot'
+require_relative '../../../module/data_dump'
+require_relative '../../../class/rot'
 
 rotted_mash       = Array.new
 rotted_mash << DataDump::BARCODE_MASH.map do |str|

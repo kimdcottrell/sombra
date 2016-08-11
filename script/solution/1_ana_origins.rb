@@ -27,7 +27,7 @@ options = {
 }
 
 printf "First Frame:
-#{first_encrypted_hash.decode options}
+#{first_encrypted_hash.encode options}
 
 Second Frame:
-#{second_encrypted_hash.decode options}"
+#{second_encrypted_hash.encode options}"

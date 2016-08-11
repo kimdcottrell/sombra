@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require_relative '../module/data_dump'
+require_relative '../../../module/data_dump'
 
 DataDump::FLIGHT_LIST.each do |fl|
   abbr = fl[:flight_abbr]
