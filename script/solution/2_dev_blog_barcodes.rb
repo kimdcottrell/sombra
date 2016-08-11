@@ -10,7 +10,7 @@ require_relative '../../module/data_dump'
 # DEVNOTE: unpack barcode mash into hex just to see if it's possible, but for no other reason
 # barcode_hex       = DataDump::BARCODE_MASH.map{ |str| str.unpack('H*')}
 
-# credits go to blinry
+# credits go to blinry for code
 lines = [""]*13
 nums = DataDump::BARCODE_MASH.each do |l|
   l.split("-").each_with_index do |c,i|
@@ -44,6 +44,3 @@ qr_index = 0
 end
 
 Bitmapper::convert("#{qr.join}", 39, 39, false, 20, "./asset/img/dev_blog_barcodes.gif")
-
-
-#printf "#{barcode.join("\n")}\n#{barcode_remainder}\n\n\n^ take this value and make the 1's black and the 0's white for your QR code" # cross referenced: http://pastebin.com/yFH3115S
