@@ -3,7 +3,7 @@ require "rmagick"
 include Magick
 
 class Bitmapper
-  def self.convert(input_string, width, height, input_as_bytes = true, output_file="./dump.gif")
+  def self.convert(input_string, width, height, input_as_bytes = true, scale = 10, output_file="./dump.gif")
 
     if input_as_bytes
       bin = ""
@@ -28,7 +28,7 @@ class Bitmapper
       end
     end
     draw.draw(img)
-    img = img.scale(8)
+    img = img.scale(scale)
     if img.write(output_file)
       return output_file
     end
