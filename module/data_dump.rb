@@ -1,13 +1,18 @@
 module DataDump
   # the tracer hash as it was seen in the video. this includes \n to denote the newlines.
   TRACER_HASH_NEWLINES = "U2FsdGVkX1+vupppZksvRf5pq5g5XjFRlipRkwB0K1Y96Qsv2L\nm+31cmzaAILwytX/z66ZVWEQM/ccf1g+9m5Ubu1+sit+A9cenD\nxxqklaxbm4cMeh2oKhqlHhdaBKOi6XX2XDWpa6+P5o9MQw=="
-
-  # the tracer hash without the newlines
   TRACER_HASH = "U2FsdGVkX1+vupppZksvRf5pq5g5XjFRlipRkwB0K1Y96Qsv2Lm+31cmzaAILwytX/z66ZVWEQM/ccf1g+9m5Ubu1+sit+A9cenDxxqklaxbm4cMeh2oKhqlHhdaBKOi6XX2XDWpa6+P5o9MQw=="
 
   ACHIEVEMENTS_FULL_TRANSLATED_MESSAGE = "Nice, not bad at all. However, I'm getting bored. Let's try something in the same direction. uczihriwgsxorxwunaarawryqhbrsfmeqrjjmu 5552E494 78T3 4VM9 OPL6 IS8208O913KRlrx"
-
   ACHIEVEMENTS_HASH = "uczihriwgsxorxwunaarawryqhbrsfmeqrjjmu 5552E494 78T3 4VM9 OPL6 IS8208O913KRlrx"
+  ACHIEVEMENTS_HASH_NO_UNIX_TIMECODE = "uczihriwgsxorxwunaarawryqhbrsfmeqrjjmu IS8208O913KRlrx"
+  ACHIEVEMENTS_HASH_NO_UNIX_TIMECODE_NO_LRX_FILE = "uczihriwgsxorxwunaarawryqhbrsfmeqrjjmu"
+
+  # http://carlosisbad.deviantart.com/art/Skull-7-627712045?ga_submit_new=10%253A1470993053
+  CARLOS_SKULL_HASH = "PkjL7GNrk15u70XPNrGJi2ESGJUiSuU1kL77LNErjqvuJivJ0uqvG5FPNiLEZ7rEqqLJP7GqLqviGi0EPiiNi0rPv7"
+
+  # OMBA removed
+  OMBA_SKULL_HASH = ":Pk:,jL.7GNr:k1,:5u.70XPNrGJi2.ESGJU.iSuU1:.kL7:7:L.NErjq.v:uJi.vJ0uqvG5FPNiLEZ7rEqqLJP7G.,qLqviG,i0E:PiiN:..i::..:::0r.:P:v::7,"
 
   ANA_ORIGIN = {
     # On July 12, 2016, a video for the new Overwatch hero named Ana was released. By pausing the video at the 2:11 time mark, a bunch of hexadecimal numbers were discovered:
